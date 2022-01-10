@@ -15,16 +15,24 @@ int main(int argc, char** argv) {
     params.sdl_window_flags = SDL_WINDOW_RESIZABLE;
     params.window_title = "Libtcod Template Project";
 
-    auto console = tcod::Console{ 80, 25 };
+    auto console = tcod::Console{20,20};
     params.console = console.get();
 
     auto context = tcod::new_context(params);
+
+    //player
+    int playerx = 10, playery = 10;
 
     // Game loop.
     while (true) {
         // Rendering.
         console.clear();
-        tcod::print(console, { 0, 0 }, "Hello World", TCOD_white, std::nullopt);
+        for (auto& tile : console) tile.ch = '.';
+        auto& player = console.at({ playerx, playery });
+        player.fg = { 255, 0, 0};
+        player.ch = '@';
+        //tcod::print(console, { playerx, playery }, "@", TCOD_white, std::nullopt);
+      
         context->present(console);
 
         // Handle input.
@@ -35,6 +43,24 @@ int main(int argc, char** argv) {
             case SDL_QUIT:
                 std::exit(EXIT_SUCCESS);
                 break;
+            case SDL_KEYDOWN:
+                switch (event.key.keysym.sym)
+                {
+                    case SDLK_UP:
+                        playery--;
+                        break;
+                    case SDLK_DOWN:
+                        playery++;
+                        break;
+                    case SDLK_LEFT:
+                        playerx--;
+                        break;
+                    case SDLK_RIGHT:
+                        playerx++;
+                        break;
+                default:break;
+                }
+            default:break;
             }
         }
     }
