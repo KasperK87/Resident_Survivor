@@ -3,7 +3,6 @@
 
 #include <SDL.h>
 #include <libtcod.h>
-
 #include <cstdlib>
 
 int main(int argc, char** argv) {
@@ -13,9 +12,9 @@ int main(int argc, char** argv) {
     params.argv = argv;
     params.vsync = 1;
     params.sdl_window_flags = SDL_WINDOW_RESIZABLE;
-    params.window_title = "Libtcod Template Project";
+    params.window_title = "Resident:Survivor";
 
-    auto console = tcod::Console{20,20};
+    auto console = tcod::Console{100,34};
     params.console = console.get();
 
     auto context = tcod::new_context(params);
@@ -27,7 +26,15 @@ int main(int argc, char** argv) {
     while (true) {
         // Rendering.
         console.clear();
-        for (auto& tile : console) tile.ch = '.';
+        for (int i = 0; i < 100; i++)
+            for (int j = 0; j < 33; j++) {
+                if (i >= 21 && j >= 3 && j != 34) console.at({i,j}).ch = '.';
+            }
+        /*for (auto& tile : console) {
+            if (tile. > 21)
+                tile.ch = '.';
+        }
+        */
         auto& player = console.at({ playerx, playery });
         player.fg = { 255, 0, 0};
         player.ch = '@';
@@ -47,6 +54,7 @@ int main(int argc, char** argv) {
                 switch (event.key.keysym.sym)
                 {
                     case SDLK_UP:
+                    case SDLK_8:
                         playery--;
                         break;
                     case SDLK_DOWN:
