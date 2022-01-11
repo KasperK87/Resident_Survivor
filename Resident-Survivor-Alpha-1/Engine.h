@@ -13,8 +13,6 @@ public:
 	Engine();
 	~Engine();
 	void update();
-	void render();
+	void render(tcod::Console& con);
 };
-
-extern Engine engine;
 

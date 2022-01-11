@@ -12,7 +12,7 @@ public:
 	Map(int width, int height);
 	~Map();
 	bool isWall(int x, int y) const;
-	void render(tcod::Console con) const;
+	void render(tcod::Console& con) const;
 protected:
 	Tile* tiles;
 

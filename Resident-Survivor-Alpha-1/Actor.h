@@ -6,5 +6,6 @@ public:
 	tcod::ColorRGB col; // color
 
 	Actor(int x, int y, int ch, const tcod::ColorRGB& col);
-	void render(tcod::Console con) const;
+	
+	void render(tcod::Console& con) const;
 };
