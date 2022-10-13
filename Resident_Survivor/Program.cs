@@ -21,7 +21,7 @@ namespace Resident_Survivor
             while (window.IsOpen)
             {
                 window.DispatchEvents();
-                window.Clear(Color.Red);
+                window.Clear(Color.Green);
                 window.Display();
             }
         }
