@@ -6,7 +6,7 @@ namespace Resident_Survivor {
     {
         private const int WIDTH = 640;
         private const int HEIGHT = 480;
-        private const string TITLE = "Resident Survivo";
+        private const string TITLE = "Resident Survivor";
         private RenderWindow window;
         private VideoMode mode = new VideoMode(WIDTH, HEIGHT);
         
