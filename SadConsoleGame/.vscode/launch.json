@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Resident_Survivor/bin/Debug/net6.0/Resident_Survivor.dll",
+            "program": "${workspaceFolder}/bin/Debug/net6.0/SadConsoleGame.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Resident_Survivor",
+            "cwd": "${workspaceFolder}",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false

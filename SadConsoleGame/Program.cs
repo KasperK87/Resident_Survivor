@@ -3,7 +3,7 @@ using SadConsole;
 using SadRogue.Primitives;
 using Console = SadConsole.Console;
 
-namespace ResidentSurvivor
+namespace SadConsoleGame
 {
     class Program
     {
