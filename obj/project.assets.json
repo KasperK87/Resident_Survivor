@@ -276,11 +276,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame\\SadConsoleGame.csproj",
+      "projectUniqueName": "C:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame.csproj",
       "projectName": "SadConsoleGame",
-      "projectPath": "c:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame\\SadConsoleGame.csproj",
+      "projectPath": "C:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame.csproj",
       "packagesPath": "C:\\Users\\kkris\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame\\obj\\",
+      "outputPath": "C:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KUgg6YTX8EAYIZufOVJDYZHtwNGmyNnV2bv30mxSi8HP1kTqDfdU4MNThmIFhM1L0DA+m1joZJtb2Kly/y5Lyg==",
+  "dgSpecHash": "eJx1SFDqNpEfpWT9X+mEumYq/jHwc5blo8Y+CBe+PXJIVaFW1nKGtc63tOVg+o/6dIWyYccrqzEQAhK23bBAbg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame\\SadConsoleGame.csproj",
+  "projectFilePath": "C:\\Users\\kkris\\Documents\\c#\\Resident_Survivor_Sadconsole\\SadConsoleGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kkris\\.nuget\\packages\\monogame.framework.desktopgl\\3.8.0.1641\\monogame.framework.desktopgl.3.8.0.1641.nupkg.sha512",
     "C:\\Users\\kkris\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
